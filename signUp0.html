@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Registration Page</title>
+
+	<!-- Styling starts here...-->
+	<style type="text/css">
+
+		.body{
+			padding:  0px;
+			margin:  0px;
+		}
+
+		#headersec{
+			background-color:lightcoral;
+			padding: 5px;
+		}
+
+
+		.navbar{
+			padding: 30px;
+			margin: 5px;
+			color: white;
+			text-align:center;
+			font-size: 20px;
+			font-weight:20px;
+		}
+
+		#logo{
+			height:  40px;
+			width: 20 px;
+
+		}
+
+		.n1{
+			background-color: black;
+			font-size: 25px;
+			font-weight: 50px;
+			font-family:sans-serif;
+			padding: 10px;
+			color:  white;
+			border-radius: 5px;
+			margin:  10px;
+		}
+
+		#footersec{
+			background-color: black ;	 
+			margin:  0px;
+			padding: 5px;
+		}
+
+		.c2{
+			text-align: center;
+			color: white;
+		}
+
+		#mainimg{
+			background-repeat: no-repeat;
+		}
+
+		.main_login_section{
+			 margin-top: 100px;
+			 margin-left: 30%;
+			 margin-bottom: 100px;
+			 margin-right: 30%;
+			 border: 10px;
+			 border-color: black;
+			 border-width: 40px;
+
+		}
+
+		.c1{
+			background-image: url(bricks.jpg);
+			border: 10px;
+			 border-color: black;
+			 border-width: 40px;
+			 border-radius: 3px;
+			 color:  white;
+			 font-size: 20px;
+			 font-weight: bolder;
+		}
+
+
+
+		input{
+			height:  30px;
+			width:  300px;
+			margin: 10px 10px 15px 30px;
+		}
+
+		.gender{
+			height:  10px;
+			width:  20px;
+		}
+
+	</style>
+
+</head>
+
+
+<body class="body">
+	<header id="headersec">
+		<div>
+			<nav class="navbar">
+			<img src="shriffleLogo.png" alt="shriffle_logo" id="logo">
+			<a class="n1" href="June29.html">Home</a>
+			<a class="n1" href="userProfile.html" target="blank_">Profile</a>
+			<a class="n1" href="signUp.html" target="blank_">SignUp</a>
+			<a class="n1" href="userReport.html" target="blank_">Report</a>
+		</nav>
+
+		</div>
+
+	</header>
+
+	<main>
+		<section class="main_login_section">
+			<div class= "c1">
+				 <form class="details_form">
+				 	Name: <input type="text" name="name" placeholder="Pleaser enter your name" required/>
+				 	<br>
+				 	<br>
+				 	Email: <input type="text" name="email" placeholder="Please enter your email" required/>
+				 	<br>
+				 	<br>
+				 	Mob: <input type="number" name="mob_no" placeholder="Please enter your contact no." required/>
+				 	<br>
+				 	<br>
+				 	Age:  <input type="number" name="age" placeholder="Mention your age">
+				 	<br>
+				 	<br>
+
+				 	Gender: <label for="male"> 
+					  <input class="gender" id="male" type="radio" name="gender">Male
+					</label>
+
+					<label for="female"> 
+					  <input class="gender" id="female" type="radio" name="gender">Female
+					</label>
+
+					<label for="others"> 
+					  <input class="gender" id="others" type="radio" name="gender">Others
+					</label>
+
+					<br>
+					<br>
+
+					DOB: <input type="date" name="dob" placeholder="Please mention your DOB" required/>
+					<br>
+					<br>
+
+					Address: <input type="textarea" name="address" placeholder="Your address..."/>
+
+					<br>
+					<br>
+
+					Country: <label for="country">
+						<select>
+							<option>India</option>
+							<option>Japan</option>
+							<option>Canada</option>
+							<option>Britain</option>
+							<option>United states</option>
+						</select>
+					</label>
+
+					<br>
+					<br>
+
+					State: <label for="state">
+						<select>
+							<option>Madhya Pradesh</option>
+							<option>Chattisgarh</option>
+							<option>Gujarat</option>
+							<option>Maharashtra</option>
+							<option>Assam</option>
+						</select>
+					</label>
+
+					<br>
+					<br>
+
+					Cities:  <label for="city">
+						<select>
+							<option>Indore</option>
+							<option>Dewas</option>
+							<option>Mumbai</option>
+							<option>Ahmedabad</option>
+							<option>Ujjain</option>
+						</select>
+					</label>
+
+					<br>
+					<br>
+
+					Graduation Year: <input type="date" name="grad_year" placeholder="Graduation year" required/>
+					<br>
+					<br>
+
+					Hobbies: <input type="textarea" name="hobby" placeholder="Your hobbies..."/>
+					<br>
+					<br>
+
+
+
+				 </form>
+			</div>
+		
+		</section>
+
+	</main>
+
+	<footer id="footersec">
+		 <div class="c2">
+		 	<h2> <bold>Hi I'm footer!</bold></h2>
+		 </div>
+	</footer>
+	
+</body>
+
+</html>
