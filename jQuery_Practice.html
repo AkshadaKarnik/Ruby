@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ 	<title>jQuery Practice</title>
+
+    <style>
+   .great-grand-parent *{display:block; border:2px solid #aaa; color:#aaa; padding:5px; margin:5px;}
+    </style>
+    
+    <script src="https://www.tutorialspoint.com/jquery/jquery-3.6.0.js"></script>
+   <!-- jQuery selectors -->
+    <script type="text/javascript">
+      /*  $(document).ready(function(){
+            $("h1").css("background-color", "yellow");
+        });*/
+    </script>
+
+    <!-- jQuery Standard Attributes -->
+    <script type="text/javascript">
+       /* $(document).ready(function(){
+            $("button").click(function(){
+                alert(" Href is: " + $("home").attr("href"));
+                alert(" Title is: " + $("home").attr("title"));
+            });
+        });*/
+    </script>
+
+    <!-- jQuery Custom Attributes -->
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("#b1").click(function(){
+                debugger;
+                alert(" Author is: " + $("house").data("data-author-name"));
+                
+            });  
+        });
+    </script>
+
+    <!-- jQuery Taversing -->
+    <script type="text/javascript">
+     /*   $(document).ready(function(){
+            $("button").click(function(){
+                $( ".child-two" ).parent().css( "border", "2px solid red" );
+            });
+        }); */
+    </script>
+ </head>
+ <body>
+   <!-- <h1>Hello Heaven!!</h1>  
+
+ 	<h4 id="idJQ">This world is a happy place if you can see it.</h4>
+ 	<p class="classJQ">jQuery is a fast and concise JavaScript Library created by John Resig in 2006 with a nice motto: Write less, do more. jQuery simplifies HTML document traversing, event handling, animating, and Ajax interactions for rapid web development.</p>
+ 	<p class="classJQ">jQuery is being heavily used in manipulating various attributes associated with HTML elements. Every HTML element can have various standard and custom attributes (i.e. properties) which are used to define the characteristics of that HTML element.</p>
+
+    <p><a id="home" href="June29.html" title="shriffle">Home</a></p>
+    <button>Get Attributes</button>   -->
+
+    <a id="house" href="June29.html" data-author-name="Akshada" title="Shriffle">Home</a>
+    <button id="b1">Get Custom Attributes</button>
+ 
+
+   <!--
+    <div class="great-grand-parent">
+      <div style="width:500px;" class="grand-parent">
+         <ul class="parent">
+            <li class="child-one">Child One</li>
+            <li class="child-two">Child Two</li>
+         </ul>
+      </div>
+    </div>
+    <br>
+    <button>Mark the Parent</button> -->
+
+    
+ </body>
+</html>
+
+
+ 
