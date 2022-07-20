@@ -1,4 +1,4 @@
-****************************************************** Modules Cases Explained ********************************************************************
+Modules Cases Explained->
 
 1) modules_case1 folder:-
   When we've to use a module inside the main ruby file without using any keywords
@@ -13,5 +13,4 @@
   
 4) modules_case4 folder:-
    When we have the Snacks module and the file in which it has to be added in different directories
-   
- ***************************************************************** END ******************************************************************************
+    
