@@ -32,7 +32,6 @@ class ModulesCase2
 	#using Fruits and Veggies modules ki module methods here
 	Fruit.color
 	Veg.color
-
 end
 
 

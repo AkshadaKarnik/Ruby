@@ -1,8 +1,8 @@
 #using the mod1_use_def ki method here in this module
 
 require "./mod1_use_def.rb"
-include Dress
+include Mod1UseDef
 
-Dress.dress_type
-Dress.fabric_type
+Mod1UseDef.dress_type
+Mod1UseDef.fabric_type
 

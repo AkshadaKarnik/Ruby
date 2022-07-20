@@ -1,4 +1,4 @@
-#using this Snacks module in the main ruby file  
+#using this Snacks module in the main ruby file (modules_case4.rb)
 #Note that both files are in different directories
 
 module Snacks
