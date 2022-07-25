@@ -1,0 +1,39 @@
+
+*****************	RVM installation problems and commands that I used	*******************************
+
+apt-get remove --purge --auto-remove rvm	# for removing i.e. uninstalling the whole rvm from system
+apt-get remove --purge --auto-remove ruby	# for removing i.e. uninstalling the whole ruby from system
+
+#Note that this above was not working the other day due to some PublicKey issue in apt
+
+****************************************************************************************************
+
+#Note that I manually removed the rvm and ruby as they were previously installed in the root directory(/$) instead of default home directory(~$)
+
+For removal of rvm from path (/usr/local/rvm/) which was in the root directory, I used forcefully deletion command i.e. (rm -rf rvm) after reaching to the /user/local/ in root dir.
+
+****************************************************************************************************
+
+
+#Now start installing rvm and ruby version freshly---->
+
+https://www.digitalocean.com/community/tutorials/how-to-install-ruby-on-rails-with-rvm-on-ubuntu-18-04
+
+
+
+#Note that here,
+
+1) I did'nt used the (less command)
+
+2) and also the gpg key I used is mentioned below:
+
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 9CDB294B29A5B1E2E00C24C022E8EF3461A50EF6
+
+3) and in source command did'nt used the username as (sammy) instead I used (rails) the source path that was given on successfully installing rvm:
+
+
+*******************************************************************************************************
+
+
+
+
