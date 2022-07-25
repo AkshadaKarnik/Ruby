@@ -1,0 +1,77 @@
+
+*******************************	RUBY MODULES & NAMESPACES	****************************
+
+A Ruby module is nothing more than a grouping of objects under a single name. The objects may be constants, methods, classes, or other modules.
+
+Modules have two uses-
+ -> You can use a module as a convenient way to bundle objects together
+ -> or you can incorporate its contents into a class with Ruby’s include statement.
+
+ When a module is used as a container for objects, it’s called a namespace.
+
+ example: 
+ Ruby’s Math module is a good example of a namespace: it provides an overarching structure for constants like Math::PI and methods like Math::log, which would otherwise clutter up the main Kernel namespace.
+
+ Modules are also used to package functionality for inclusion in classes. The Enumerable module isn’t supposed to be used on its own: it adds functionality to a class like Array or Hash. 
+
+ Module is actually the superclass of Class, so every Ruby class is also a module.
+
+ We can use methods of Module from within classes. The same methods will work exactly the same way within modules. 
+
+ The only thing you can’t do with a module is instantiate an object from it.
+
+
+ ***********************	include n exclude during importring modules	*****************************
+
+ Include is used to importing module code. Ruby will throw an error when we try to access the methods of import module with the class directly because it gets imported as a subclass for the superclass. So, the only way is to access it through the instance of the class.
+
+Extend is also used to importing module code but extends import them as class methods. Ruby will throw an error when we try to access methods of import module with the instance of the class because the module gets import to the superclass just as the instance of the extended module. So, the only way is to access it through the class definition.
+
+In simple words, the difference between include and extend is that ‘include’ is for adding methods only to an instance of a class and ‘extend’ is for adding methods to the class but not to its instance.
+
+
+**************************	Multiple Inheritance using MIXINS	*************************************
+Problem:
+You want to create a class that derives from two or more sources, but Ruby doesn’t support multiple inheritance.
+
+
+Solution:
+Ruby uses the MIXINS so as to perform multiple inheritance [means when a particular class derives the features of one or more base classe(s)]
+
+****************************************************************************************************
+
+Basic keywords:
+
+require ->
+Suppose we want to write two methods and also want to use these methods in multiple programs. So, we will write these methods in a module, so that we can easily *call* this module in any program with the help of *require* keyword without re-writing code.
+syntax is: require"./Fruit.rb"  (By this we *call* the .rb file of the module)
+[Note that if you use ./ here in require then generally noi need to use LOAD PATH but for safer side use LOAD PATH as sometimes your module could'nt get found using ./ in require]
+
+include -> 
+when we want *to use* that module in a class after calling it
+syntax is: include Module_name (place it above the class always but not mandatory)
+
+*****************************************************************************************************
+
+Class and Instance Variables:
+
+When to use class variables:-
+Look, class variables exist till there exits the class in which they are declared.
+
+When to use instance variables:-
+Instance variables exiss until there exists the object of the class in which they are declared.
+
+
+Which to Prefer Class/Instance Variables:-
+It depends on the requirement BUT.. YOU MUST USE THE INSTANCE VARIABLES (because they exist until they have the object, jaise hi object over hua toh instance variable bhi kill ho jata hai)
+Jabki, in case of class variable they exist until the class get killed, means that memory wastage bhi yaha hota hai.
+
+Conclusion:- SO, ALWAYS TRY TO USE INSTANCE VARIABLES IN YOUR RUBY CODE
+
+********************************************************************************************************
+
+
+
+
+
+
