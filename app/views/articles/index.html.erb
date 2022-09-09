@@ -1,0 +1,20 @@
+<!--Rails automatically renders this app/views/articles/index.html.erb view.
+#The ERB code in the view is evaluated to output HTML.
+#The server sends a response containing the HTML back to the browser.
+-->
+<h1>Articles</h1>
+
+<ul>
+  <!--We can access the @articles instance variable here in the View's html.erb file -->
+  <% @articles.each do |article| %>
+    <% unless article.archived? %>
+      <li>
+        <!-- <a href="/articles/<%= article.id %>">  <%=article.title%> </a> -->
+        <!-- <a href="<%= article_path(article)%>">  <%=article.title%> </a> -->
+        <%= link_to article.title, article %>
+      </li>
+    <% end %>
+  <% end %>
+</ul>
+
+<%= link_to "New Article", new_article_path %>
