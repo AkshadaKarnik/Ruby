@@ -1,0 +1,26 @@
+To enter into the postgres shell->                        sudo -u postgres psql                 (The "Peer authentication failed" error typically occurs when PostgreSQL is configured to use the "peer" authentication method, and it's not able to authenticate the user based on the operating system user.)
+
+
+
+
+To find existing pg users->                               SELECT usename FROM pg_user;
+
+To create username->                                      CREATE USER new_username WITH PASSWORD 'password';
+
+To grant additional privileges to the user if needed      ALTER USER new_username WITH SUPERUSER;
+                                    
+(eg. to grant super user privileges)
+     
+To update username->                                      ALTER USER your_current_username RENAME TO new_username; 
+
+To change the pasword as per the username you got->       ALTER USER your_username WITH PASSWORD 'new_password'; 
+
+
+
+
+
+To check postgres status/to start/restart                 sudo service postgresql status/start/restart
+
+To restrat postgres server->                              sudo service postgresql restart
+
+To exit postgtes->                                        \q
